@@ -22,6 +22,9 @@ gray_multi = cv2.cvtColor(img_multi, cv2.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(gray, 1.1, 4)
 faces_multi = face_cascade.detectMultiScale(gray_multi, 1.1, 4)
 
+print(f"face len: {len(faces)}")
+print(f"faces len: {len(faces_multi)}")
+
 # Draw circle around the face
 img = cv2.ellipse(
     img,
